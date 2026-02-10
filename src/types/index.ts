@@ -15,7 +15,7 @@ export type CitiesContextType = {
   isLoading: boolean;
   cities: Array<City>;
   currentCity: any;
-  getCity: (id: string) => Promise<void>;
+  getCity: (id: string |undefined) => Promise<void>;
   error: string;
   deleteCity: (id: string | number) => Promise<void>;
   createCity: (city: Omit<City, "id">) => any;

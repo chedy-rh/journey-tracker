@@ -92,7 +92,7 @@ export function CitiesProvider({ children }: { children: ReactNode }) {
   }, []);
 
   const getCity = useCallback(
-    async function getCity(id: string) {
+    async function getCity(id: string |undefined) {
       if (Number(id) === currentCity.id) return;
 
       dispatch({ type: "loading" });

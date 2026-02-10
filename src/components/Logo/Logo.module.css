@@ -1,0 +1,15 @@
+.logo {
+  height: 5.2rem;
+  margin-right: 10px;
+}
+
+.logoLink {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: white;
+}
+
+.logoLink h3 {
+  text-transform: capitalize;
+}
